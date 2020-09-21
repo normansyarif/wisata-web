@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="ripple.css">
+</head>
+<body>
+
+	<section class="mt-2">
+		<table class="label-table"> 
+			<tr>
+				<td class="main-label">Wilayah</td>
+			</tr>
+			<tr>
+				<td class="sub-label">Pilih wilayah wisata</td>
+			</tr>
+		</table>
+
+		<div class="v-scroll-container">
+			<a href="#" class="horizontal-menu-item card-item v-scroll ripple">
+				<div class="img-container">
+					<img src="image.jpg">
+				</div>
+				<div class="label-container">
+					<div class="label-top">Okey</div>
+					<div class="label-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </div> 
+				</div>
+			</a>
+
+			<a href="#" class="horizontal-menu-item card-item v-scroll ripple">
+				<div class="img-container">
+					<img src="image.jpg">
+				</div>
+				<div class="label-container">
+					<div class="label-top">Okey</div>
+					<div class="label-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </div> 
+				</div>
+			</a>
+
+			<a href="#" class="horizontal-menu-item card-item v-scroll ripple">
+				<div class="img-container">
+					<img src="image.jpg">
+				</div>
+				<div class="label-container">
+					<div class="label-top">Okey</div>
+					<div class="label-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </div> 
+				</div>
+			</a>
+
+			<a href="#" class="horizontal-menu-item card-item v-scroll ripple">
+				<div class="img-container">
+					<img src="image.jpg">
+				</div>
+				<div class="label-container">
+					<div class="label-top">Okey</div>
+					<div class="label-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </div> 
+				</div>
+			</a>
+
+			<a href="#" class="horizontal-menu-item card-item v-scroll ripple">
+				<div class="img-container">
+					<img src="image.jpg">
+				</div>
+				<div class="label-container">
+					<div class="label-top">Okey</div>
+					<div class="label-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </div> 
+				</div>
+			</a>
+
+			<a href="#" class="horizontal-menu-item card-item v-scroll ripple">
+				<div class="img-container">
+					<img src="image.jpg">
+				</div>
+				<div class="label-container">
+					<div class="label-top">Okey</div>
+					<div class="label-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </div> 
+				</div>
+			</a>
+
+			<a href="#" class="horizontal-menu-item card-item v-scroll ripple">
+				<div class="img-container">
+					<img src="image.jpg">
+				</div>
+				<div class="label-container">
+					<div class="label-top">Okey</div>
+					<div class="label-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </div> 
+				</div>
+			</a>
+
+			<a href="#" class="horizontal-menu-item card-item v-scroll ripple">
+				<div class="img-container">
+					<img src="image.jpg">
+				</div>
+				<div class="label-container">
+					<div class="label-top">Okey</div>
+					<div class="label-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </div> 
+				</div>
+			</a>
+
+			<div class="clear"></div>
+			
+		</div>
+	</div>
+</section>
+
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".img-container").each(function(){
+			var refH = $(this).height();
+			var refW = $(this).width();
+			var refRatio = refW/refH;
+
+			var imgH = $(this).children("img").height();
+			var imgW = $(this).children("img").width();
+
+			if ( (imgW/imgH) < refRatio ) { 
+				$(this).addClass("portrait");
+			} else {
+				$(this).addClass("landscape");
+			}
+		})
+	});
+	
+</script>
+<script src="ripple.js"></script>
+<script type="text/javascript">
+	$('.ripple').ripple({
+		color:'#ffffff',
+		time:'.4s'
+	});
+</script>
+
+</body>
+</html>

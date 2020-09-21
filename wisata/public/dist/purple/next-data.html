@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Purple Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+
+  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html">Wisata<span>Jambi<i class="fa fa-leaf"></i></span></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html">W<span>J</span></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+          </li>
+          <li class="nav-item nav-logout d-none d-lg-block">
+            <a class="nav-link" href="#">
+              <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial -->
+      <div class="main-panel" style="width: 100%">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-8 offset-md-2 col-sm-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <div class="more-data">
+
+                    <form class="forms-sample">
+                      <div class="more-data-data">
+                        <h4 class="card-title mb-3">Lengkapi Data Diri Anda</h4>
+                        <div class="row">
+                          <div class="col-md-4 col-sm-12 mb-3">
+                            <img id="avatar-preview" src="assets/images/default-avatar.png" style="width: 100%">
+                            <button id="avatar-btn" type="button" class="btn btn-primary btn-block">Ganti foto</button>
+                            <input id="avatar-file" type="file" name="" style="display: none">
+                          </div>
+                          <div class="col-md-8 col-sm-12">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">No Telp</label>
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">+62</span>
+                                </div>
+                                <input type="number" class="form-control" placeholder="81234567890" aria-label="HP" aria-describedby="basic-addon1" required>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputUsername1">No WhatsApp</label>
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">+62</span>
+                                </div>
+                                <input type="number" class="form-control" placeholder="81234567890" aria-label="WhatsApp" aria-describedby="basic-addon1" required>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Alamat</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Alamat" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Wilayah</label>
+                              <select class="form-control" required>
+                                <option>Wilayah 1</option>
+                              </select>
+                            </div>
+                            <input id="jenis-usaha" type="hidden" name="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="more-data-usaha">
+                        <h4 class="card-title mb-3">Pilih Jenis Usaha</h4>
+                        <div class="row">
+                          <div class="col-md-3 col-sm-12 mb-3">
+                            <div class="select-usaha" aria-data="homestay">
+                              <img src="assets/images/homestay.jpg">
+                              <p>Homestay</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-12 mb-3">
+                            <div class="select-usaha" aria-data="souvenir">
+                              <img src="assets/images/souvenir.jpg">
+                              <p>Souvenir</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-12 mb-3">
+                            <div class="select-usaha" aria-data="guide">
+                              <img src="assets/images/guide.jpg">
+                              <p>Tour Guide</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-12 mb-3">
+                            <div class="select-usaha" aria-data="seni">
+                              <img src="assets/images/seni.jpg">
+                              <p>Kelompok Seni</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="more-data-next-btn">
+                        <button type="submit" class="btn btn-primary btn-block">Selanjutnya ></button>
+                      </div>
+
+                    </form>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Wisata Jambi. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Template hand-crafted & made with <i class="mdi mdi-heart text-danger"></i> by <a href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+
+
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page -->
+  <script type="text/javascript" src="http://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <!-- Jquery modal -->
+  <!-- end jquery modal -->
+
+  <!-- End custom js for this page -->
+  <script type="text/javascript">
+    $('.select-usaha').click(function() {
+      let jenis = $(this).attr('aria-data');
+      $('#jenis-usaha').val(jenis);
+      $('.select-usaha').removeClass('usaha-selected');
+      $(this).addClass('usaha-selected');
+    });
+
+    $('form').on('submit', function () {
+      if($('#jenis-usaha').val() == ""){
+          alert('Mohon pilih jenis usaha terlebih dahulu');
+          return false;
+      } else {
+          return true;
+      }
+    });
+
+    $('#avatar-file').change( function(event) {
+      $("#avatar-preview").fadeIn("fast").attr('src',URL.createObjectURL(event.target.files[0]));
+    });
+
+    $('#avatar-btn').click(function() {
+      $('#avatar-file').trigger('click');
+    })
+  </script>
+</body>
+</html>

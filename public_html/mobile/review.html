@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="ripple.css">
+</head>
+<body>
+
+	<section style="z-index: 6" class="list-container ">
+		<div class="content-comment">
+			<div class="list-comment">
+				<div class="item">
+					<div class="item-name-container">
+						<p class="item-comment-name">John Smith</p>
+						<p class="item-rating-2">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+						</p>
+						<p class="item-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="list-comment">
+				<div class="item">
+					<div class="item-name-container">
+						<p class="item-comment-name">John Smith</p>
+						<p class="item-rating-2">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+						</p>
+						<p class="item-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="list-comment">
+				<div class="item">
+					<div class="item-name-container">
+						<p class="item-comment-name">John Smith</p>
+						<p class="item-rating-2">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+						</p>
+						<p class="item-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="list-comment">
+				<div class="item">
+					<div class="item-name-container">
+						<p class="item-comment-name">John Smith</p>
+						<p class="item-rating-2">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+							<img src="star-yellow.svg">
+						</p>
+						<p class="item-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="mt-2">
+		
+	</section>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".img-container").each(function(){
+				var refH = $(this).height();
+				var refW = $(this).width();
+				var refRatio = refW/refH;
+
+				var imgH = $(this).children("img").height();
+				var imgW = $(this).children("img").width();
+
+				if ( (imgW/imgH) < refRatio ) { 
+					$(this).addClass("portrait");
+				} else {
+					$(this).addClass("landscape");
+				}
+			})
+		});
+	</script>
+	<script src="ripple.js"></script>
+	<script type="text/javascript">
+		$('.ripple').ripple({
+			color:'#CFD8DC',
+			time:'.4s'
+		});
+	</script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".img-container").each(function(){
+			var refH = $(this).height();
+			var refW = $(this).width();
+			var refRatio = refW/refH;
+
+			var imgH = $(this).children("img").height();
+			var imgW = $(this).children("img").width();
+
+			if ( (imgW/imgH) < refRatio ) { 
+				$(this).addClass("portrait");
+			} else {
+				$(this).addClass("landscape");
+			}
+		})
+	});
+	
+</script>
+
+</body>
+</html>
